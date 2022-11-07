@@ -30,17 +30,24 @@
         <div>
           <ul>
             <li><a href="#">About</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
             <li><a href="#">Help</a></li>
           </ul>
         </div>
         <div>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Home</a></li>
-            <li>
-              <select name="drop-down" id="drop-down">
-                <option value="./login.html">Login</option>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li class="hover-hidden">
+              <select
+                name="drop-down"
+                id="drop-down"
+                class="drop-down"
+                onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
+              >
+                <option hidden>Account</option>
+                <option disabled>Account</option>
+                <option value="./pages/login.html">Login</option>
                 <option value="./login.html">Signup</option>
               </select>
             </li>
@@ -53,13 +60,13 @@
         <section>
           <div class="landing-left">
             <form action="" class="landing-form">
-              <h2>Request a ride now</h2>
+              <h2>Book a Cab!</h2>
               <div class="pickup">
                 <input
                   type="text"
                   name="pickup"
                   id="pickup"
-                  placeholder="pickup location"
+                  placeholder="Pickup location"
                 />
               </div>
               <div class="destination">
@@ -67,12 +74,12 @@
                   type="text"
                   name="destination"
                   id="destination"
-                  placeholder="destination"
+                  placeholder="Destination"
                 />
               </div>
               <div class="btn-container">
                 <div class="">
-                  <button type="submit" class="btn now">Request now</button>
+                  <button type="submit" class="btn now">Book now</button>
                 </div>
                 <div class="">
                   <button type="submit" class="btn later">
@@ -85,7 +92,7 @@
         </section>
         <section>
           <div class="landing-right">
-            <img src="./public/taxi-landing.jpg" alt="landingpage" />
+            <img src="./public/landing_page.jpeg" alt="landingpage" />
           </div>
         </section>
       </div>
