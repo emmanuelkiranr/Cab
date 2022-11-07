@@ -59,6 +59,10 @@ a {
   padding: 0.3em;
 }
 
+option {
+  border: 2px solid #55828b;
+}
+
 .hover-hidden:hover {
   background-color: #f7f7f7 !important;
   border-radius: 0;
@@ -127,17 +131,29 @@ input::placeholder {
   font-size: 1em;
   border-radius: 0.5em;
 }
+
 .now {
   width: 8em;
   background-color: #55828b;
   color: white;
   border: #55828b solid;
 }
+
+.now:hover {
+  background-color: #f7f7f7;
+  color: #55828b;
+}
+
 .later {
   width: 10em;
   background-color: #f7f7f7;
   color: #55828b;
   border: #f7f7f7 solid;
+}
+
+.later:hover {
+  background-color: #55828b;
+  color: #f7f7f7;
 }
 
 .landing-right {
